@@ -1,0 +1,119 @@
+<ion-header>
+  <ion-toolbar color="cab">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>My Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngIf="!cards || cards.length===0">
+    <ion-card-content>
+      <ion-text>
+        You don't have any card added. Add a card for payment. You can add more than one, and select which one to pay
+        from.
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+  <div *ngIf="cards && cards.length">
+    <ion-list-header class="default-header">
+      <ion-label>
+        Select Default Card
+      </ion-label>
+    </ion-list-header>
+    <ion-list class="cards-list ion-no-margin light-gray-bg">
+      <ion-radio-group mode="md">
+        <ion-card *ngFor="let card of cards; let i = index;" class="sc-ion-card-ios-h">
+          <ion-card-content>
+            <div class="cardContentSection">
+              <ion-radio slot="start" value="{{i}}"></ion-radio>
+              <ion-label class="ion-padding-start">
+                <ion-row class="full" class="ion-align-items-center">
+                  <ion-col size="10">
+                    <ion-row class="ion-align-items-center">
+                      <p class="ion-no-margin"><strong>XXXX-XXXX-XXXX-{{card.number}}</strong></p>
+                    </ion-row>
+                    <ion-row class="ion-align-items-center">
+                      <p class="small ion-no-margin">Expiry date: {{card.expiry}}</p>
+                      <h6 class="small mycolor ion-padding-start ion-no-margin" *ngIf="i==0">PRIMARY</h6>
+                    </ion-row>
+
+                  </ion-col>
+                </ion-row>
+              </ion-label>
+              <img [src]="card.image" class="cardImage">
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+
+  <div class="add-payment-div contentSection">
+    <ion-list-header>
+      <ion-label>
+        Add New Card
+      </ion-label>
+    </ion-list-header>
+    <ion-grid class="ion-padding-horizontal">
+      <ion-row>
+        <ion-col>
+          <ion-text><span class="label">Credit/Debit Number</span></ion-text>
+          <ion-input class="input ion-padding-horizontal" type="number" placeholder="Credit/Debit Number"
+            [(ngModel)]="cardDetails.cardNumber"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text><span class="label">Card Type</span></ion-text>
+          <ion-select [interfaceOptions]="customAlertOptions" placeholder="Select Card Type" class="input"
+            [(ngModel)]="cardDetails.cardType">
+            <ion-select-option value="visa">VISA</ion-select-option>
+            <ion-select-option value="master">Master Card</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text><span class="label">Security Code(CVV)</span></ion-text>
+          <ion-input class="input ion-padding-horizontal" type="number" placeholder="CVV"
+            [(ngModel)]="cardDetails.cardCvv">
+          </ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-text><span class="label">Expiry Date</span></ion-text>
+          <ion-input class="input ion-padding-horizontal" placeholder="MM/YY" [(ngModel)]="cardDetails.cardDate">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h5 class="label ion-no-margin">Billing Zip/Postal Code</h5>
+          <h6 class="small">The zip or postal code from the address registered for this card</h6>
+        </ion-col>
+        <ion-col>
+          <ion-input class="input ion-padding-horizontal" placeholder="Zip/Postal Code"
+            [(ngModel)]="cardDetails.zipCode">
+          </ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="lockSection">
+          <div>
+            <ion-icon name="lock-closed" class="icon" class="lockIcon"></ion-icon>
+          </div>
+          <div class="secureTextSection">
+            <h5 class="label ion-no-margin">Secure Payment</h5>
+            <h6 class="small ion-no-margin">Trusted by over 500 million shoppers in 50 countries</h6>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="danger" (click)="saveCard()" expand="block">Save Card</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

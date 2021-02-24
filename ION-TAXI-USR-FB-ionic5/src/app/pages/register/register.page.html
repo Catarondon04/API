@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="cab">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="buttons-center">
+    <ion-button slot="start" fill="solid" class="facebook-button button-width">
+      <ion-icon name="logo-facebook" slot="icon-only"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" fill="solid" class="google-button button-width">
+      <ion-icon name="logo-google" slot="icon-only"></ion-icon>
+    </ion-button>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="row-div">
+        <div class="horizontal-line"></div>
+        <div class="label-class">
+          <p class="img-div">OR</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="ion-padding-top">
+    <ion-row>
+      <ion-col size="6">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">FIRST NAME</ion-label>
+          <ion-input type="text" [(ngModel)]="user.first_name"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">LAST NAME</ion-label>
+          <ion-input type="text" [(ngModel)]="user.last_name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">
+            EMAIL</ion-label>
+          <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">Area</ion-label>
+          <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="IN+91" okText="Okay!"
+            [(ngModel)]="user.area">
+            <ion-select-option *ngFor="let item of dialCodes" [value]="item.dialCode">{{ item.code }}{{ item.dialCode }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="8">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">Mobile</ion-label>
+          <ion-input type="number" [(ngModel)]="user.phone"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">PASSWORD</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="ion-padding">
+  <ion-button expand="full" color="cab" type="submit" [disabled]="disabled" class="submit-button"
+    (click)="registerUser()">Next
+    <span *ngIf="spinner">
+      <ion-spinner name="lines"></ion-spinner>
+    </span>
+  </ion-button>
+</ion-footer>

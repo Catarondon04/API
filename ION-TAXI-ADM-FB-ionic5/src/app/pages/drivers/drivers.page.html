@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Drivers
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding">
+  <div *ngIf="drivers === undefined" class="loaderSection ion-text-center">
+    <ion-spinner name="lines"></ion-spinner>
+  </div>
+  <div *ngIf="!drivers || !drivers.length" class="emptyDiv">
+    There are no drivers to list. Drivers will show up here once they signup.
+  </div>
+  <div *ngIf="drivers">
+    <ion-segment color="dark" *ngIf="drivers && drivers.length" [value]="segment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="true">
+        <ion-label>Approved</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="false">
+        <ion-label>Not Approved</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-card *ngFor="let driver of filterDrivers">
+      <ion-card-header>
+        <ion-card-title>{{ driver.email }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="9">
+            Available: {{ driver.available }} <br />
+            Riding: {{ driver.request_ride }}
+          </ion-col>
+          <ion-col size="2">
+            <ion-toggle [checked]="driver.approved" (ionChange)="toggleChanged($event, driver.id)"></ion-toggle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>

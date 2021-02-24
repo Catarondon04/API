@@ -1,0 +1,7 @@
+{
+  "name": "iontaxi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

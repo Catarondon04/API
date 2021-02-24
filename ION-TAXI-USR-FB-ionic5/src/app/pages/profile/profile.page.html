@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="cab">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-div">
+
+    <ion-avatar>
+      <ion-img (click)="openActionsheet()"
+        [src]="loggedInUser.profile_img ? loggedInUser.profile_img : 'assets/userDefault.png' "></ion-img>
+    </ion-avatar>
+
+  </div>
+  <ion-grid class="ion-padding-top">
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item-input">
+          <ion-label position="stacked" color="medium">
+            Full Name</ion-label>
+          <ion-input name="fullname" [(ngModel)]="loggedInUser.name" type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="item-input">
+          <ion-label position="stacked" color="medium"> Email</ion-label>
+          <ion-input name="email" [(ngModel)]="loggedInUser.email" type="email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="stacked" class="ion-padding-bottom" color="medium">Area</ion-label>
+          <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="IN+91" okText="Okay!">
+            <ion-select-option *ngFor="let item of dialCodes" value="item.dialCode" selected>
+              {{item.code}}{{item.dialCode}}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+
+      </ion-col>
+      <ion-col size="8">
+        <ion-item class="item-input">
+          <ion-label position="stacked" class="ion-padding-bottom " color="medium">Mobile</ion-label>
+          <ion-input name="phone" [(ngModel)]="loggedInUser.phone" type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Places</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Phoenix Society</h2>
+        <p>Add Home</p>
+      </ion-label>
+      <ion-icon name="create" slot="end" (click)="gotoEdit()"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="briefcase" slot="start"></ion-icon>
+      <ion-label>
+        <h2>West Town</h2>
+        <p>Work</p>
+      </ion-label>
+      <ion-icon name="create" slot="end" (click)="gotoEdit()"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer class="ion-padding">
+  <ion-button expand="full" color="cab" type="submit" class="submit-button" (click)="updateProfileDetails()">Save
+    Details
+  </ion-button>
+</ion-footer>

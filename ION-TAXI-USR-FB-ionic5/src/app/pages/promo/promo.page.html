@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="cab">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title> Promo Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ion-padding">
+    <ion-item class="default-item">
+      <ion-label position="stacked">Enter Promo Code Here</ion-label>
+      <ion-input type="text"></ion-input>
+      <ion-button fill="clear" slot="end">Done</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Select Payment Mode</ion-label>
+      </ion-list-header>
+      <ion-card>
+        <ion-item>
+          <ion-icon slot="start" name="logo-amazon">
+          </ion-icon>
+          <ion-label>Amazon Pay</ion-label>
+          <ion-radio slot="end" value="amazon" checked></ion-radio>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-icon slot="start" name="card">
+          </ion-icon>
+          <ion-label>Credit / Debit Card</ion-label>
+          <ion-radio slot="end" value="cc"></ion-radio>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-icon slot="start" name="cash">
+          </ion-icon>
+          <ion-label>Cash</ion-label>
+          <ion-radio slot="end" value="cash"></ion-radio>
+        </ion-item>
+      </ion-card>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>
+<ion-footer class="ion-padding">
+  <ion-button expand="full" type="submit" color="cab" class="submit-button" (click)="submit()">Done</ion-button>
+</ion-footer>

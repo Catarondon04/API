@@ -1,0 +1,7 @@
+{
+  "name": "iondriver",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
