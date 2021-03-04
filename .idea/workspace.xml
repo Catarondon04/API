@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidGradleBuildConfiguration">
+    <option name="COMMAND_LINE_OPTIONS" value="--stacktrace" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="476d0141-a126-4478-8559-a47e27782e67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ION-TAXI-ADM-FB-ionic5/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ION-TAXI-ADM-FB-ionic5/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ION-TAXI-DRV-FB-ionic5/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ION-TAXI-DRV-FB-ionic5/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ION-TAXI-USR-FB-ionic5/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pEmRJeyD82aMNoz5s1uepbQ84T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="476d0141-a126-4478-8559-a47e27782e67" name="Default Changelist" comment="" />
+      <created>1614756613536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614756613536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="138" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614757278138">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="138" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1614757278138" />
+    <state x="363" y="20" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1614758082284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="20" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1366.728@0.0.1366.728" timestamp="1614758082284" />
+    <state x="92" y="92" width="1182" height="544" key="AVDManager" timestamp="1614793329226">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="AVDManager/0.0.1366.728@0.0.1366.728" timestamp="1614793329226" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1614792653922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614792653922" />
+  </component>
+</project>
