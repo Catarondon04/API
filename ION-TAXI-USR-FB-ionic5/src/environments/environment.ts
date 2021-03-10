@@ -17,7 +17,7 @@ export const environment = {
     measurementId: "G-M3PJ5DFYWE"
   },
   API_URLS: {
-    dev: 'http://192.168.1.2:3000',
+    dev: 'http://192.168.1.2:8100',
     prod: ''
   },
   DUMMY_CARDS: [{

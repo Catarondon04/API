@@ -17,7 +17,7 @@ export const environment = {
     measurementId: "G-M3PJ5DFYWE"
   },
   API_URLS: {
-    dev: 'http://192.168.1.2:3000',
+    dev: 'http://192.168.1.2:8100',
     prod: ''
   },
   DUMMY_CARDS: [{
@@ -74,7 +74,7 @@ export const environment = {
     { title: 'A Guide to Ion Taxi' },
     { title: 'Accessibility' }
   ],
-  GOOGLE_MAPS_API_KEY: 'YAIzaSyDFyx8pI2oeUjTR-4eabfCSOcf1Yj-YBLg',
+  GOOGLE_MAPS_API_KEY: 'AIzaSyDFyx8pI2oeUjTR-4eabfCSOcf1Yj-YBLg',
   IONIC_STORAGE: 'userdb',
   DRIVER_DELAY_MSG: 'Driver is taking longer than usual! please try again later',
   DRIVER_REJECTED_MSG: 'Driver rejected your booking',
