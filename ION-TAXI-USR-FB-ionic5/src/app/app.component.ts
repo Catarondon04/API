@@ -45,7 +45,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      if (environment.GOOGLE_MAPS_API_KEY && environment.GOOGLE_MAPS_API_KEY === 'AIzaSyDFyx8pI2oeUjTR-4eabfCSOcf1Yj-YBLg') {
+      if (environment.GOOGLE_MAPS_API_KEY && environment.GOOGLE_MAPS_API_KEY === 'AIzaSyC8aWI-nCV3_jFJoRMkIvH_kCWpj2VnOQ0') {
         this.showAPIKeyAlert();
       }
     });

@@ -10,21 +10,20 @@
 export const environment = {
   production: true,
   config: {
-    apiKey: 'AIzaSyBl8L44muSYUO9QWFL_f_23kcMdXBdxta0',
-    authDomain: 'taxi-platform-cdf9d.firebaseapp.com',
-    databaseURL: 'https://taxi-platform-cdf9d.firebaseio.com',
-    projectId: 'taxi-platform-cdf9d',
-    storageBucket: 'taxi-platform-cdf9d.appspot.com',
-    messagingSenderId: '214474905314',
-    appId: '1:214474905314:web:0364de4cdad898ecf2f0bb',
-    measurementId: 'G-S12H8PS6ZK'
+    apiKey: "AIzaSyC8aWI-nCV3_jFJoRMkIvH_kCWpj2VnOQ0",
+    authDomain: "apic-305802.firebaseapp.com",
+    databaseURL: "https://apic-305802-default-rtdb.firebaseio.com",
+    projectId: "apic-305802",
+    storageBucket: "apic-305802.appspot.com",
+    messagingSenderId: "1097721380000",
+    appId: "1:1097721380000:web:fc813729ab4ddb9dd85dc5"
   },
   API_URLS: {
-    dev: 'http://192.168.1.2:3000',
+    dev: 'http://localhost:8100/',
     prod: ''
   },
   RUN_ENVIRONMENT: 'prod',
-  GOOGLE_MAPS_API_KEY: 'YOUR_API_KEY'
+  GOOGLE_MAPS_API_KEY: 'AIzaSyC8aWI-nCV3_jFJoRMkIvH_kCWpj2VnOQ0'
 };
 
 

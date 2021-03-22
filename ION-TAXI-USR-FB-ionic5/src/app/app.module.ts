@@ -30,6 +30,7 @@ import { StorageService } from '@app/services/api/firestorage.service';
 import { AuthenticationService } from '@app/services/api/firebase-authentication.service';
 import { FirestoreService } from '@app/services/api/firestore.service';
 import { APIService } from './services/api/api.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { APIService } from './services/api/api.service';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     Camera,

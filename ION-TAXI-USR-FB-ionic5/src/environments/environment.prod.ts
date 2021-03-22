@@ -7,14 +7,13 @@ export const environment = {
   RUN_ENVIRONMENT: 'dev',
   COUNTRY: 'US',
   config: {
-    apiKey: "AIzaSyDMDD2y6IEdGTk7i_ezhIDF9n3Fuzm_J04",
-    authDomain: "apic-5cc0d.firebaseapp.com",
-    databaseURL: "https://apic-5cc0d-default-rtdb.firebaseio.com",
-    projectId: "apic-5cc0d",
-    storageBucket: "apic-5cc0d.appspot.com",
-    messagingSenderId: "1094371167039",
-    appId: "1:1094371167039:web:e974c8dd84d2c316b0e18a",
-    measurementId: "G-M3PJ5DFYWE"
+    apiKey: "AIzaSyC8aWI-nCV3_jFJoRMkIvH_kCWpj2VnOQ0",
+    authDomain: "apic-305802.firebaseapp.com",
+    databaseURL: "https://apic-305802-default-rtdb.firebaseio.com",
+    projectId: "apic-305802",
+    storageBucket: "apic-305802.appspot.com",
+    messagingSenderId: "1097721380000",
+    appId: "1:1097721380000:web:fc813729ab4ddb9dd85dc5"
   },
   API_URLS: {
     dev: 'http://192.168.1.2:8100',
@@ -74,7 +73,7 @@ export const environment = {
     { title: 'A Guide to Ion Taxi' },
     { title: 'Accessibility' }
   ],
-  GOOGLE_MAPS_API_KEY: 'AIzaSyDFyx8pI2oeUjTR-4eabfCSOcf1Yj-YBLg',
+  GOOGLE_MAPS_API_KEY: 'AIzaSyC8aWI-nCV3_jFJoRMkIvH_kCWpj2VnOQ0',
   IONIC_STORAGE: 'userdb',
   DRIVER_DELAY_MSG: 'Driver is taking longer than usual! please try again later',
   DRIVER_REJECTED_MSG: 'Driver rejected your booking',
